@@ -25,5 +25,6 @@ main()
 
     cout << "\n\n----------------------------\n\n";
 
-    cout << ***z ; //0x78fe08 // Address (a)
+    cout << ***z << endl; // 5
+    cout << **z  ; // Address (a)
 }
