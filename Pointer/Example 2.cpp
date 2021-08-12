@@ -1,4 +1,4 @@
-//Swap arrya index usign pointer
+//Swap Array Index Using Pointer
 //Git HUb Amoo-Srwsh
 
 #include <iostream>
