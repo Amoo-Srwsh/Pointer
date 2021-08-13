@@ -1,4 +1,4 @@
-//Change Second Array Index Usign Pointers
+//Change Second Index Usign Pointers
 //Git HUb Amoo-Srwsh
 
 #include <iostream>
