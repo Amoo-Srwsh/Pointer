@@ -27,5 +27,4 @@ int main()
 	cout << *(*(*(p+1)+1)+0) << endl;
 	cout << *(*(*(p+1)+1)+1) << endl;
 	cout << *(*(*(p+1)+1)+2) << endl;
-
 }
