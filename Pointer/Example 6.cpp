@@ -1,3 +1,5 @@
+//Amoo-Srwsh
+//[2D] array of pointer
 #include <iostream>
 using namespace std;
 int main()
