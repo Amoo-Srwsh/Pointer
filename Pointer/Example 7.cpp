@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	int a[2][3] - {11,12,13,14,15,16};
+	int a[2][3] = {11,12,13,14,15,16};
 
 	int (*p)[3];
 
