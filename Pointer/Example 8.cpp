@@ -1,3 +1,5 @@
+//Amoo-Srwsh
+//pointer to 2D-arrays
 #include <iostream>
 using namespace std;
 
