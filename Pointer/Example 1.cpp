@@ -27,4 +27,10 @@ main()
 
     cout << ***z << endl; // 5
     cout << **z  ; // Address (a)
+    
+    cout << "\n\n\n";
+    
+    cout << sizeof(x) << endl;  //8 Byte in memory
+    cout << sizeof(y) << endl;
+    cout << sizeof(z) << endl;
 }
