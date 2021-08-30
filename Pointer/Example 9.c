@@ -15,7 +15,7 @@ void main()
 int* larger(int *x, int *y)
 {
     if(*x > *y)
-        return x;
+        return x; //return address a
     else
-        return y;
+        return y; //return address b
 }
