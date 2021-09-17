@@ -5,7 +5,7 @@ bool compare(int a, int b)
 {
 	return (a > b) ? true : false;
 }
-void Bsort(int a[], bool (*compare_address)(int,int))
+void Bsort(int *a, bool (*compare_address)(int,int))
 {
 	for (int i = 0; i < 9; i++)
 	{
