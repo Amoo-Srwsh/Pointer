@@ -22,6 +22,6 @@ int main ()
 
   m = operation (7, 5, addition);
   n = operation (20, m, minus);
-  cout <<n;
+  cout << n << endl;
   return 0;
 }
