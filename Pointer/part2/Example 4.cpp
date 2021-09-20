@@ -14,7 +14,7 @@ int main()
 	cout << "Enter (1) to order in ascending\nEnter (2) to order in descending ";
 	cin >> order;
 
-	(order == 1) ? bubble(*(p + 1),**(p + 2),ascending) : bubble(*(p + 1),**(p + 2),descending);  //Short if
+	(order == 1) ? bubble(*(p + 1),**(p + 2),ascending) : bubble(*(p + 1),**(p + 2),descending);
 
 	for (counter = 0; counter < **(p + 2); counter++)
 		cout << *(a + counter) << " ";
