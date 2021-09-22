@@ -10,7 +10,7 @@ int main ()
   cin >> i;
   p = new (nothrow) int[i];
   
-  if (p == nullptr){
+  if (!p){
     cout << "Error: memory could not be allocated";
     return 1;
   }
