@@ -8,11 +8,12 @@ int main ()
   int * p;
   cout << "How many numbers would you like to type? ";
   cin >> i;
-  p= new (nothrow) int[i];
-  if (p == nullptr)
+  p = new (nothrow) int[i];
+  
+  if (p == nullptr){
     cout << "Error: memory could not be allocated";
-  else
-  {
+    return 1;
+  }
     for (n=0; n<i; n++)
     {
       cout << "Enter number: ";
@@ -22,6 +23,6 @@ int main ()
     for (n=0; n<i; n++)
       cout << p[n] << ", ";
     delete[] p;
-  }
+  
   return 0;
 }
