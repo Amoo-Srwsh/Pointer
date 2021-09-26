@@ -6,7 +6,7 @@ int main()
 {
 	int x, size = 0, counter = 0; 
 	int *a = NULL;
-	int *p;
+	int *p = NULL;
 
 	while ( cin >> x )
 	{
