@@ -53,14 +53,14 @@ int *f (int *a1, int len1, int *a2, int len2, int pos)
 
 	int *a = new int[len1 + len2]; 
 
-	 int i = 0, j = 0, k = 0;
-
-	for (; i < pos; i++, k++)
-		*(a + i) = *(a1 + k);
-	for (; j < len2; ++j, ++k)
-		*(a + i) = *(a2 + k);
-	for (; i < len1; ++i, ++k)
-		*(a + i) = *(a1 + k); 
+	int i = 0, j = 0, k = 0;
+	
+	for (i = 0; i < pos; i++, k++)
+                *(a + k) = *(a1 + i);
+        for (j = 0; j < len2; ++j, ++k)
+                *(a + k) = *(a2 + j);
+        for (; i < len1; ++i, ++k)
+                *(a + k) = *(a1 + i); 
 	
 	return a; 
 }
