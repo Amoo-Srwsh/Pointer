@@ -1,6 +1,14 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
+
+#define RAND 32767
+unsigned long n = 1;
+
+int rand()
+{
+    n = n * 1103515245 + 12345;
+    return (n/65536) % RAND+1;
+}
 
 int *f (int *a1, int len1 ,int *a2 ,int len2 ,int pos);
 
