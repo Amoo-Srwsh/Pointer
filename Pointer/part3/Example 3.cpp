@@ -56,11 +56,11 @@ int *f (int *a1, int len1, int *a2, int len2, int pos)
 	int i = 0, j = 0, k = 0;
 	
 	for (i = 0; i < pos; i++, k++)
-                *(a + k) = *(a1 + i);
+                a[k] = a1[k];
         for (j = 0; j < len2; ++j, ++k)
-                *(a + k) = *(a2 + j);
+                a[k] = a2[j];
         for (; i < len1; ++i, ++k)
-                *(a + k) = *(a1 + i); 
+                a[k] = a1[i];
 	
 	return a; 
 }
