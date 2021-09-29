@@ -27,12 +27,8 @@ int main()
  
             if (ans == 1) {
                 index++;
-                marks = (int*)realloc(
-                    marks,
-                    (index + 1)
-                        * sizeof(
-                            int)); // Dynamically reallocate
-                                   // memory by using realloc
+                marks = (int*)realloc(marks,(index + 1)* sizeof(int)); // Dynamically reallocate
+                                                                      // memory by using realloc
                 // check if the memory is successfully
                 // allocated by realloc or not?
                 if (marks == NULL) {
