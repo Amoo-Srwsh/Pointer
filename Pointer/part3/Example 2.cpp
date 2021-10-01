@@ -1,4 +1,5 @@
 // Dynamic Array
+/* You can improve this code with a simple function (realloc) */
 #include <iostream>
 using namespace std;
 
