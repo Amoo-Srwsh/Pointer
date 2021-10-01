@@ -37,17 +37,11 @@ int main()
 
 	int *a3, len3;
 	len3 = len1 + len2; 
-	a3 = f(a1,len1,a2,len2,pos); 
 	
-	if (a3 == NULL)
-		cout << "\nInvalid position!\n";
-	else
-	{
-		cout << "New Array: ";
-		for (int i = 0; i < len3; i++) 
-			cout << *(a3 + i) << "    ";
-		cout << endl;
-	}
+	cout << "New Array: ";
+	for (int i = 0; i < len3; i++) 
+		cout << *(f(a1,len1,a2,len2,pos) + i)<< "    ";
+	cout << endl;
 	
 	delete []a1;
 	delete []a2;
