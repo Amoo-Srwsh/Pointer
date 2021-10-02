@@ -37,10 +37,16 @@ int main()
 
 	int *a3, len3;
 	len3 = len1 + len2; 
+	a3 = f(a1,len1,a2,len2,pos);
+	
+	if (a3 == NULL){
+		cout << "Error : "; 
+		return 1;
+	}
 	
 	cout << "New Array: ";
 	for (int i = 0; i < len3; i++) 
-		cout << *(f(a1,len1,a2,len2,pos) + i)<< "    ";
+		cout << a3[i] << "    ";
 	cout << endl;
 	
 	delete []a1;
@@ -51,7 +57,11 @@ int main()
 int *f (int *a1, int len1, int *a2, int len2, int pos)
 {
 	if (pos < 0 || pos >= len1)
-		return NULL;
+	{
+		delete a1;
+		delete a2;
+		exit(1);
+	}
 
 	int *a = new int[len1 + len2]; 
 
