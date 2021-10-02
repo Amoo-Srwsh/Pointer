@@ -23,5 +23,5 @@ int main()
                 cout << "Average = " << (float) sum/counter << endl;
         }
 
-        delete p;
+        free (p);
 }
