@@ -8,44 +8,47 @@ void sort (int &a, int &b);
 int main()
 {
 	int len = 10;
-	int *a = new int[len];
+	int *array = new int[len];
 	
-	srand ((unsigned)time(NULL));
+	srand ((unsigned)time(NULL));   // generate random number
 	for (int i = 0; i < len; i++)
-		a[i] = rand() % 100;
+		array[i] = rand() % 100;
 
-	int *add = selection_sort(a,len);
-	delete []a;	
+	int *New_Array_Address = selection_sort(array,len);
+	delete []array;	
 
 	for (int i = 0; i < len; i++)
-		cout << add[i] << "    ";
+		cout << New_Array_Address[i] << "    ";
 
-	delete []add;
+	delete []New_Array_Address;
 }
 
-void swap (int &a, int &b)
+void swap (int &array_value, int &min_value)
 {
-	int temp = a;
-	a = b;
-	b = temp;
+	int temp = array_value;
+	array_value = min_value;
+	min_value = temp;
 }
 
-int* selection_sort (int *x, int size)
+int* selection_sort (int *array, int size)
 {
-	int *p , *m , *end;
-	int *New_Array = new int[size];
+	int *min_address , *end_of_array_address;
+	int *New_Array = new int[size];  // own array
 
-	end = x + size-1;
+	end_of_array_address = array + (size-1);
 	
-	for (int i = 0; i < size; i++,x++)
+	for (int i = 0; i < size; i++,array++)
 	{
-		m = x;
-		for (p = x + 1; p <= end; p++)
-			if (*p < *m)
-				m = p; 
-		swap (*x,*m);
-		New_Array[i] = *x;
+		min_address = array;
+		for (int *p = array + 1; p <= end_of_array_address; p++)
+			if (*p < *min_address)  // (min_address) value
+				min_address = p; 
+		swap (*array,*min_address);
+		New_Array[i] = *array;
 	}
 	
 	return New_Array;
+	/*
+		return first block address in heap memory
+	*/
 }	
