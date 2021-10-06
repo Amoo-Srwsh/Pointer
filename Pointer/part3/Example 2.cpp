@@ -9,8 +9,7 @@ int main()
         while ( cin >> x )
         {
                 p = (int*) realloc (p, 1 * sizeof(int));
-                p[counter] = x;
-                counter ++;
+                p[counter++] = x;
         }
 	
         if (counter == 0)
