@@ -13,6 +13,7 @@ int main()
 	int *fst_space = new int[len1];
 	int *sec_space = new int[len2];
 
+	srand((unsigned)time(NULL));
 	for (int i = 0; i < len1; i++)
 	{
 		*(fst_space + i) = rand()%100;
