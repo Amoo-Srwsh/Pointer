@@ -23,7 +23,7 @@ int main()
 	}
 	
 	for (int i = 0; i < 10; i++)
-		delete []a[i];
+		delete []a[i]; // All heap blocks were freed -- no leaks are possible
 
 	delete []a;
 }
